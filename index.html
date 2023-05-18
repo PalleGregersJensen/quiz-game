@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Quiz</h1>
+    <section>Velkommen.
+        Tryk på knappen Start Quiz for at starte quizzen.
+        <button id="start-button-quiz">Start Quiz</button>
+    </section>
+
+
+    <section id="grid-conatiner">
+        <!-- Spørgsmål 1 -->
+      <dialog id="question-one-dialog"> <p id="question-one-paragraph">Spørgsmål 1</p> Hvad hedder hovedstaden i Mongoliet?
+        <input type="radio" id="ulan-bator" name="question-one-dialog" value="Ulan Bator">
+        <label for="ulan-bator">Ulan Bator</label>
+        <input type="radio" id="phom-penh" name="question-one-dialog" value="phom-penh">
+        <label for="phom-penh">Phom Penh</label>
+        <input type="radio" id="kathmandu" name="question-one-dialog" value="kathmandu">
+        <label for="kathmandu">Kathmandu</label>
+        <button id="question-one-dialog-answer-button">Svar</button>
+        <p id="question-one-dialog-result"></p>
+      </dialog>
+      <!-- Spørgsmål 2 -->
+      <dialog id="question-two-dialog"> <p id="question-two-paragraph">Spørgsmål 2</p> Hvem spiller hovedskurken i James Bond-filmen Goldeneye?
+        <input type="radio" id="sean-bean" name="question-two-dialog" value="sean-bean">
+        <label for="sean-bean">Sean Bean</label>
+        <input type="radio" id="gabriel-byrne" name="question-two-dialog" value="gabriel-byrne">
+        <label for="gabriel-byrne">Gabriel Byrne</label>
+        <input type="radio" id="alan-rickman" name="question-two-dialog" value="alan-rickman">
+        <label for="alan-rickman">Alan Rickman</label>
+      </dialog>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
