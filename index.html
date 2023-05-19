@@ -10,233 +10,274 @@
   </head>
   <body>
     <h1>Quiz</h1>
-    <section>Velkommen.
-        Tryk på knappen Start Quiz for at starte quizzen.
-        <button id="start-button-quiz">Start Quiz</button>
+    <section>
+      <p>Velkommen. Tryk på knappen Start Quiz for at starte quizzen.</p>
+      <button id="start-button-quiz">Start Quiz</button>
+      <p>Antal rigtige svar:<p id="points"></p></p>
+      
     </section>
 
-
     <section id="grid-conatiner">
-        <!-- Spørgsmål 1 -->
-      <dialog id="question-one-dialog"> <p id="question-one-paragraph">Spørgsmål 1</p> Hvad hedder hovedstaden i Mongoliet? <br>
-        <input type="radio" id="ulan-bator" name="question-one-dialog" value="Ulan Bator">
-        <label for="ulan-bator">Ulan Bator</label><br>
-        <input type="radio" id="phom-penh" name="question-one-dialog" value="phom-penh">
-        <label for="phom-penh">Phom Penh</label><br>
-        <input type="radio" id="kathmandu" name="question-one-dialog" value="kathmandu">
-        <label for="kathmandu">Kathmandu</label><br>
+      <!-- Spørgsmål 1 -->
+      <dialog id="question-one-dialog">
+        <p id="question-one-paragraph">Spørgsmål 1</p>
+        Hvad hedder hovedstaden i Mongoliet? <br />
+        <input type="radio" id="ulan-bator" name="question-one-dialog" value="Ulan Bator" />
+        <label for="ulan-bator">Ulan Bator</label><br />
+        <input type="radio" id="phom-penh" name="question-one-dialog" value="phom-penh" />
+        <label for="phom-penh">Phom Penh</label><br />
+        <input type="radio" id="kathmandu" name="question-one-dialog" value="kathmandu" />
+        <label for="kathmandu">Kathmandu</label><br />
         <button id="question-one-dialog-answer-button">Svar</button>
         <p id="question-one-dialog-result"></p>
       </dialog>
       <!-- Spørgsmål 2 -->
-      <dialog id="question-two-dialog"> <p id="question-two-paragraph">Spørgsmål 2</p> Hvem spiller hovedskurken i James Bond-filmen Goldeneye?<br>
-        <input type="radio" id="sean-bean" name="question-two-dialog" value="sean-bean">
-        <label for="sean-bean">Sean Bean</label><br>
-        <input type="radio" id="gabriel-byrne" name="question-two-dialog" value="gabriel-byrne">
-        <label for="gabriel-byrne">Gabriel Byrne</label><br>
-        <input type="radio" id="alan-rickman" name="question-two-dialog" value="alan-rickman">
-        <label for="alan-rickman">Alan Rickman</label><br>
+      <dialog id="question-two-dialog">
+        <p id="question-two-paragraph">Spørgsmål 2</p>
+        Hvem spiller hovedskurken i James Bond-filmen Goldeneye?<br />
+        <input type="radio" id="sean-bean" name="question-two-dialog" value="sean-bean" />
+        <label for="sean-bean">Sean Bean</label><br />
+        <input type="radio" id="gabriel-byrne" name="question-two-dialog" value="gabriel-byrne" />
+        <label for="gabriel-byrne">Gabriel Byrne</label><br />
+        <input type="radio" id="alan-rickman" name="question-two-dialog" value="alan-rickman" />
+        <label for="alan-rickman">Alan Rickman</label><br />
         <button id="question-two-dialog-answer-button">Svar</button>
         <p id="question-two-dialog-result"></p>
-    </dialog>
-    <!-- Spørgsmål 3 -->
-      <dialog id="question-three-dialog"> <p id="question-three-paragraph">Spørgsmål 3</p>Hvor tit afholdes valg til Europa-parlamentet?<br>
-        <input type="radio" id="EP3" name="question-3-dialog" value="EP3">
-        <label for="EP3">Hvert tredje år</label><br>
-        <input type="radio" id="EP4" name="question-three-dialog" value="EP4">
-        <label for="EP4">Hvert fjerde år</label><br>
-        <input type="radio" id="EP5" name="question-three-dialog" value="EP5">
-        <label for="EP5">Hvert femte år</label><br>
+      </dialog>
+      <!-- Spørgsmål 3 -->
+      <dialog id="question-three-dialog">
+        <p id="question-three-paragraph">Spørgsmål 3</p>
+        Hvor tit afholdes valg til Europa-parlamentet?<br />
+        <input type="radio" id="EP3" name="question-3-dialog" value="EP3" />
+        <label for="EP3">Hvert tredje år</label><br />
+        <input type="radio" id="EP4" name="question-three-dialog" value="EP4" />
+        <label for="EP4">Hvert fjerde år</label><br />
+        <input type="radio" id="EP5" name="question-three-dialog" value="EP5" />
+        <label for="EP5">Hvert femte år</label><br />
         <button id="question-three-dialog-answer-button">Svar</button>
         <p id="question-three-dialog-result"></p>
-    </dialog>
-    <!-- Spørgsmål 4 -->
-      <dialog id="question-two-dialog"> <p id="question-two-paragraph">Spørgsmål 2</p> Hvem spiller hovedskurken i James Bond-filmen Goldeneye?<br>
-        <input type="radio" id="sean-bean" name="question-two-dialog" value="sean-bean">
-        <label for="sean-bean">Sean Bean</label><br>
-        <input type="radio" id="gabriel-byrne" name="question-two-dialog" value="gabriel-byrne">
-        <label for="gabriel-byrne">Gabriel Byrne</label><br>
-        <input type="radio" id="alan-rickman" name="question-two-dialog" value="alan-rickman">
-        <label for="alan-rickman">Alan Rickman</label><br>
+      </dialog>
+      <!-- Spørgsmål 4 -->
+      <dialog id="question-four-dialog">
+        <p id="question-four-paragraph">Spørgsmål 4</p>
+        Hvem spiller hovedskurken i James Bond-filmen Goldeneye?<br />
+        <input type="radio" id="sean-bean" name="question-two-dialog" value="sean-bean" />
+        <label for="sean-bean">Sean Bean</label><br />
+        <input type="radio" id="gabriel-byrne" name="question-two-dialog" value="gabriel-byrne" />
+        <label for="gabriel-byrne">Gabriel Byrne</label><br />
+        <input type="radio" id="alan-rickman" name="question-two-dialog" value="alan-rickman" />
+        <label for="alan-rickman">Alan Rickman</label><br />
         <button id="question-two-dialog-answer-button">Svar</button>
         <p id="question-two-dialog-result"></p>
-    </dialog>
-    <!-- Spørgsmål 5 -->
-      <dialog id="question-two-dialog"> <p id="question-two-paragraph">Spørgsmål 2</p> Hvem spiller hovedskurken i James Bond-filmen Goldeneye?<br>
-        <input type="radio" id="sean-bean" name="question-two-dialog" value="sean-bean">
-        <label for="sean-bean">Sean Bean</label><br>
-        <input type="radio" id="gabriel-byrne" name="question-two-dialog" value="gabriel-byrne">
-        <label for="gabriel-byrne">Gabriel Byrne</label><br>
-        <input type="radio" id="alan-rickman" name="question-two-dialog" value="alan-rickman">
-        <label for="alan-rickman">Alan Rickman</label><br>
+      </dialog>
+      <!-- Spørgsmål 5 -->
+      <dialog id="question-two-dialog">
+        <p id="question-two-paragraph">Spørgsmål 2</p>
+        Hvem spiller hovedskurken i James Bond-filmen Goldeneye?<br />
+        <input type="radio" id="sean-bean" name="question-two-dialog" value="sean-bean" />
+        <label for="sean-bean">Sean Bean</label><br />
+        <input type="radio" id="gabriel-byrne" name="question-two-dialog" value="gabriel-byrne" />
+        <label for="gabriel-byrne">Gabriel Byrne</label><br />
+        <input type="radio" id="alan-rickman" name="question-two-dialog" value="alan-rickman" />
+        <label for="alan-rickman">Alan Rickman</label><br />
         <button id="question-two-dialog-answer-button">Svar</button>
         <p id="question-two-dialog-result"></p>
-    </dialog>
-    <!-- Spørgsmål 6 -->
-      <dialog id="question-two-dialog"> <p id="question-two-paragraph">Spørgsmål 2</p> Hvem spiller hovedskurken i James Bond-filmen Goldeneye?<br>
-        <input type="radio" id="sean-bean" name="question-two-dialog" value="sean-bean">
-        <label for="sean-bean">Sean Bean</label><br>
-        <input type="radio" id="gabriel-byrne" name="question-two-dialog" value="gabriel-byrne">
-        <label for="gabriel-byrne">Gabriel Byrne</label><br>
-        <input type="radio" id="alan-rickman" name="question-two-dialog" value="alan-rickman">
-        <label for="alan-rickman">Alan Rickman</label><br>
+      </dialog>
+      <!-- Spørgsmål 6 -->
+      <dialog id="question-two-dialog">
+        <p id="question-two-paragraph">Spørgsmål 2</p>
+        Hvem spiller hovedskurken i James Bond-filmen Goldeneye?<br />
+        <input type="radio" id="sean-bean" name="question-two-dialog" value="sean-bean" />
+        <label for="sean-bean">Sean Bean</label><br />
+        <input type="radio" id="gabriel-byrne" name="question-two-dialog" value="gabriel-byrne" />
+        <label for="gabriel-byrne">Gabriel Byrne</label><br />
+        <input type="radio" id="alan-rickman" name="question-two-dialog" value="alan-rickman" />
+        <label for="alan-rickman">Alan Rickman</label><br />
         <button id="question-two-dialog-answer-button">Svar</button>
         <p id="question-two-dialog-result"></p>
-    </dialog>
-    <!-- Spørgsmål 7 -->
-      <dialog id="question-two-dialog"> <p id="question-two-paragraph">Spørgsmål 2</p> Hvem spiller hovedskurken i James Bond-filmen Goldeneye?<br>
-        <input type="radio" id="sean-bean" name="question-two-dialog" value="sean-bean">
-        <label for="sean-bean">Sean Bean</label><br>
-        <input type="radio" id="gabriel-byrne" name="question-two-dialog" value="gabriel-byrne">
-        <label for="gabriel-byrne">Gabriel Byrne</label><br>
-        <input type="radio" id="alan-rickman" name="question-two-dialog" value="alan-rickman">
-        <label for="alan-rickman">Alan Rickman</label><br>
+      </dialog>
+      <!-- Spørgsmål 7 -->
+      <dialog id="question-two-dialog">
+        <p id="question-two-paragraph">Spørgsmål 2</p>
+        Hvem spiller hovedskurken i James Bond-filmen Goldeneye?<br />
+        <input type="radio" id="sean-bean" name="question-two-dialog" value="sean-bean" />
+        <label for="sean-bean">Sean Bean</label><br />
+        <input type="radio" id="gabriel-byrne" name="question-two-dialog" value="gabriel-byrne" />
+        <label for="gabriel-byrne">Gabriel Byrne</label><br />
+        <input type="radio" id="alan-rickman" name="question-two-dialog" value="alan-rickman" />
+        <label for="alan-rickman">Alan Rickman</label><br />
         <button id="question-two-dialog-answer-button">Svar</button>
         <p id="question-two-dialog-result"></p>
-    </dialog>
-    <!-- Spørgsmål 8 -->
-      <dialog id="question-two-dialog"> <p id="question-two-paragraph">Spørgsmål 2</p> Hvem spiller hovedskurken i James Bond-filmen Goldeneye?<br>
-        <input type="radio" id="sean-bean" name="question-two-dialog" value="sean-bean">
-        <label for="sean-bean">Sean Bean</label><br>
-        <input type="radio" id="gabriel-byrne" name="question-two-dialog" value="gabriel-byrne">
-        <label for="gabriel-byrne">Gabriel Byrne</label><br>
-        <input type="radio" id="alan-rickman" name="question-two-dialog" value="alan-rickman">
-        <label for="alan-rickman">Alan Rickman</label><br>
+      </dialog>
+      <!-- Spørgsmål 8 -->
+      <dialog id="question-two-dialog">
+        <p id="question-two-paragraph">Spørgsmål 2</p>
+        Hvem spiller hovedskurken i James Bond-filmen Goldeneye?<br />
+        <input type="radio" id="sean-bean" name="question-two-dialog" value="sean-bean" />
+        <label for="sean-bean">Sean Bean</label><br />
+        <input type="radio" id="gabriel-byrne" name="question-two-dialog" value="gabriel-byrne" />
+        <label for="gabriel-byrne">Gabriel Byrne</label><br />
+        <input type="radio" id="alan-rickman" name="question-two-dialog" value="alan-rickman" />
+        <label for="alan-rickman">Alan Rickman</label><br />
         <button id="question-two-dialog-answer-button">Svar</button>
         <p id="question-two-dialog-result"></p>
-    </dialog>
-    <!-- Spørgsmål 9 -->
-      <dialog id="question-two-dialog"> <p id="question-two-paragraph">Spørgsmål 2</p> Hvem spiller hovedskurken i James Bond-filmen Goldeneye?<br>
-        <input type="radio" id="sean-bean" name="question-two-dialog" value="sean-bean">
-        <label for="sean-bean">Sean Bean</label><br>
-        <input type="radio" id="gabriel-byrne" name="question-two-dialog" value="gabriel-byrne">
-        <label for="gabriel-byrne">Gabriel Byrne</label><br>
-        <input type="radio" id="alan-rickman" name="question-two-dialog" value="alan-rickman">
-        <label for="alan-rickman">Alan Rickman</label><br>
+      </dialog>
+      <!-- Spørgsmål 9 -->
+      <dialog id="question-two-dialog">
+        <p id="question-two-paragraph">Spørgsmål 2</p>
+        Hvem spiller hovedskurken i James Bond-filmen Goldeneye?<br />
+        <input type="radio" id="sean-bean" name="question-two-dialog" value="sean-bean" />
+        <label for="sean-bean">Sean Bean</label><br />
+        <input type="radio" id="gabriel-byrne" name="question-two-dialog" value="gabriel-byrne" />
+        <label for="gabriel-byrne">Gabriel Byrne</label><br />
+        <input type="radio" id="alan-rickman" name="question-two-dialog" value="alan-rickman" />
+        <label for="alan-rickman">Alan Rickman</label><br />
         <button id="question-two-dialog-answer-button">Svar</button>
         <p id="question-two-dialog-result"></p>
-    </dialog>
-    <!-- Spørgsmål 10 -->
-      <dialog id="question-two-dialog"> <p id="question-two-paragraph">Spørgsmål 2</p> Hvem spiller hovedskurken i James Bond-filmen Goldeneye?<br>
-        <input type="radio" id="sean-bean" name="question-two-dialog" value="sean-bean">
-        <label for="sean-bean">Sean Bean</label><br>
-        <input type="radio" id="gabriel-byrne" name="question-two-dialog" value="gabriel-byrne">
-        <label for="gabriel-byrne">Gabriel Byrne</label><br>
-        <input type="radio" id="alan-rickman" name="question-two-dialog" value="alan-rickman">
-        <label for="alan-rickman">Alan Rickman</label><br>
+      </dialog>
+      <!-- Spørgsmål 10 -->
+      <dialog id="question-two-dialog">
+        <p id="question-two-paragraph">Spørgsmål 2</p>
+        Hvem spiller hovedskurken i James Bond-filmen Goldeneye?<br />
+        <input type="radio" id="sean-bean" name="question-two-dialog" value="sean-bean" />
+        <label for="sean-bean">Sean Bean</label><br />
+        <input type="radio" id="gabriel-byrne" name="question-two-dialog" value="gabriel-byrne" />
+        <label for="gabriel-byrne">Gabriel Byrne</label><br />
+        <input type="radio" id="alan-rickman" name="question-two-dialog" value="alan-rickman" />
+        <label for="alan-rickman">Alan Rickman</label><br />
         <button id="question-two-dialog-answer-button">Svar</button>
         <p id="question-two-dialog-result"></p>
-    </dialog>
-    <!-- Spørgsmål 11 -->
-      <dialog id="question-two-dialog"> <p id="question-two-paragraph">Spørgsmål 2</p> Hvem spiller hovedskurken i James Bond-filmen Goldeneye?<br>
-        <input type="radio" id="sean-bean" name="question-two-dialog" value="sean-bean">
-        <label for="sean-bean">Sean Bean</label><br>
-        <input type="radio" id="gabriel-byrne" name="question-two-dialog" value="gabriel-byrne">
-        <label for="gabriel-byrne">Gabriel Byrne</label><br>
-        <input type="radio" id="alan-rickman" name="question-two-dialog" value="alan-rickman">
-        <label for="alan-rickman">Alan Rickman</label><br>
+      </dialog>
+      <!-- Spørgsmål 11 -->
+      <dialog id="question-two-dialog">
+        <p id="question-two-paragraph">Spørgsmål 2</p>
+        Hvem spiller hovedskurken i James Bond-filmen Goldeneye?<br />
+        <input type="radio" id="sean-bean" name="question-two-dialog" value="sean-bean" />
+        <label for="sean-bean">Sean Bean</label><br />
+        <input type="radio" id="gabriel-byrne" name="question-two-dialog" value="gabriel-byrne" />
+        <label for="gabriel-byrne">Gabriel Byrne</label><br />
+        <input type="radio" id="alan-rickman" name="question-two-dialog" value="alan-rickman" />
+        <label for="alan-rickman">Alan Rickman</label><br />
         <button id="question-two-dialog-answer-button">Svar</button>
         <p id="question-two-dialog-result"></p>
-    </dialog>
-    <!-- Spørgsmål 12 -->
-      <dialog id="question-two-dialog"> <p id="question-two-paragraph">Spørgsmål 2</p> Hvem spiller hovedskurken i James Bond-filmen Goldeneye?<br>
-        <input type="radio" id="sean-bean" name="question-two-dialog" value="sean-bean">
-        <label for="sean-bean">Sean Bean</label><br>
-        <input type="radio" id="gabriel-byrne" name="question-two-dialog" value="gabriel-byrne">
-        <label for="gabriel-byrne">Gabriel Byrne</label><br>
-        <input type="radio" id="alan-rickman" name="question-two-dialog" value="alan-rickman">
-        <label for="alan-rickman">Alan Rickman</label><br>
+      </dialog>
+      <!-- Spørgsmål 12 -->
+      <dialog id="question-two-dialog">
+        <p id="question-two-paragraph">Spørgsmål 2</p>
+        Hvem spiller hovedskurken i James Bond-filmen Goldeneye?<br />
+        <input type="radio" id="sean-bean" name="question-two-dialog" value="sean-bean" />
+        <label for="sean-bean">Sean Bean</label><br />
+        <input type="radio" id="gabriel-byrne" name="question-two-dialog" value="gabriel-byrne" />
+        <label for="gabriel-byrne">Gabriel Byrne</label><br />
+        <input type="radio" id="alan-rickman" name="question-two-dialog" value="alan-rickman" />
+        <label for="alan-rickman">Alan Rickman</label><br />
         <button id="question-two-dialog-answer-button">Svar</button>
         <p id="question-two-dialog-result"></p>
-    </dialog>
-    <!-- Spørgsmål 13 -->
-      <dialog id="question-two-dialog"> <p id="question-two-paragraph">Spørgsmål 2</p> Hvem spiller hovedskurken i James Bond-filmen Goldeneye?<br>
-        <input type="radio" id="sean-bean" name="question-two-dialog" value="sean-bean">
-        <label for="sean-bean">Sean Bean</label><br>
-        <input type="radio" id="gabriel-byrne" name="question-two-dialog" value="gabriel-byrne">
-        <label for="gabriel-byrne">Gabriel Byrne</label><br>
-        <input type="radio" id="alan-rickman" name="question-two-dialog" value="alan-rickman">
-        <label for="alan-rickman">Alan Rickman</label><br>
+      </dialog>
+      <!-- Spørgsmål 13 -->
+      <dialog id="question-two-dialog">
+        <p id="question-two-paragraph">Spørgsmål 2</p>
+        Hvem spiller hovedskurken i James Bond-filmen Goldeneye?<br />
+        <input type="radio" id="sean-bean" name="question-two-dialog" value="sean-bean" />
+        <label for="sean-bean">Sean Bean</label><br />
+        <input type="radio" id="gabriel-byrne" name="question-two-dialog" value="gabriel-byrne" />
+        <label for="gabriel-byrne">Gabriel Byrne</label><br />
+        <input type="radio" id="alan-rickman" name="question-two-dialog" value="alan-rickman" />
+        <label for="alan-rickman">Alan Rickman</label><br />
         <button id="question-two-dialog-answer-button">Svar</button>
         <p id="question-two-dialog-result"></p>
-    </dialog>
-    <!-- Spørgsmål 14 -->
-      <dialog id="question-two-dialog"> <p id="question-two-paragraph">Spørgsmål 2</p> Hvem spiller hovedskurken i James Bond-filmen Goldeneye?<br>
-        <input type="radio" id="sean-bean" name="question-two-dialog" value="sean-bean">
-        <label for="sean-bean">Sean Bean</label><br>
-        <input type="radio" id="gabriel-byrne" name="question-two-dialog" value="gabriel-byrne">
-        <label for="gabriel-byrne">Gabriel Byrne</label><br>
-        <input type="radio" id="alan-rickman" name="question-two-dialog" value="alan-rickman">
-        <label for="alan-rickman">Alan Rickman</label><br>
+      </dialog>
+      <!-- Spørgsmål 14 -->
+      <dialog id="question-two-dialog">
+        <p id="question-two-paragraph">Spørgsmål 2</p>
+        Hvem spiller hovedskurken i James Bond-filmen Goldeneye?<br />
+        <input type="radio" id="sean-bean" name="question-two-dialog" value="sean-bean" />
+        <label for="sean-bean">Sean Bean</label><br />
+        <input type="radio" id="gabriel-byrne" name="question-two-dialog" value="gabriel-byrne" />
+        <label for="gabriel-byrne">Gabriel Byrne</label><br />
+        <input type="radio" id="alan-rickman" name="question-two-dialog" value="alan-rickman" />
+        <label for="alan-rickman">Alan Rickman</label><br />
         <button id="question-two-dialog-answer-button">Svar</button>
         <p id="question-two-dialog-result"></p>
-    </dialog>
-    <!-- Spørgsmål 15 -->
-      <dialog id="question-two-dialog"> <p id="question-two-paragraph">Spørgsmål 2</p> Hvem spiller hovedskurken i James Bond-filmen Goldeneye?<br>
-        <input type="radio" id="sean-bean" name="question-two-dialog" value="sean-bean">
-        <label for="sean-bean">Sean Bean</label><br>
-        <input type="radio" id="gabriel-byrne" name="question-two-dialog" value="gabriel-byrne">
-        <label for="gabriel-byrne">Gabriel Byrne</label><br>
-        <input type="radio" id="alan-rickman" name="question-two-dialog" value="alan-rickman">
-        <label for="alan-rickman">Alan Rickman</label><br>
+      </dialog>
+      <!-- Spørgsmål 15 -->
+      <dialog id="question-two-dialog">
+        <p id="question-two-paragraph">Spørgsmål 2</p>
+        Hvem spiller hovedskurken i James Bond-filmen Goldeneye?<br />
+        <input type="radio" id="sean-bean" name="question-two-dialog" value="sean-bean" />
+        <label for="sean-bean">Sean Bean</label><br />
+        <input type="radio" id="gabriel-byrne" name="question-two-dialog" value="gabriel-byrne" />
+        <label for="gabriel-byrne">Gabriel Byrne</label><br />
+        <input type="radio" id="alan-rickman" name="question-two-dialog" value="alan-rickman" />
+        <label for="alan-rickman">Alan Rickman</label><br />
         <button id="question-two-dialog-answer-button">Svar</button>
         <p id="question-two-dialog-result"></p>
-    </dialog>
-    <!-- Spørgsmål 16 -->
-      <dialog id="question-two-dialog"> <p id="question-two-paragraph">Spørgsmål 2</p> Hvem spiller hovedskurken i James Bond-filmen Goldeneye?<br>
-        <input type="radio" id="sean-bean" name="question-two-dialog" value="sean-bean">
-        <label for="sean-bean">Sean Bean</label><br>
-        <input type="radio" id="gabriel-byrne" name="question-two-dialog" value="gabriel-byrne">
-        <label for="gabriel-byrne">Gabriel Byrne</label><br>
-        <input type="radio" id="alan-rickman" name="question-two-dialog" value="alan-rickman">
-        <label for="alan-rickman">Alan Rickman</label><br>
+      </dialog>
+      <!-- Spørgsmål 16 -->
+      <dialog id="question-two-dialog">
+        <p id="question-two-paragraph">Spørgsmål 2</p>
+        Hvem spiller hovedskurken i James Bond-filmen Goldeneye?<br />
+        <input type="radio" id="sean-bean" name="question-two-dialog" value="sean-bean" />
+        <label for="sean-bean">Sean Bean</label><br />
+        <input type="radio" id="gabriel-byrne" name="question-two-dialog" value="gabriel-byrne" />
+        <label for="gabriel-byrne">Gabriel Byrne</label><br />
+        <input type="radio" id="alan-rickman" name="question-two-dialog" value="alan-rickman" />
+        <label for="alan-rickman">Alan Rickman</label><br />
         <button id="question-two-dialog-answer-button">Svar</button>
         <p id="question-two-dialog-result"></p>
-    </dialog>
-    <!-- Spørgsmål 17 -->
-      <dialog id="question-seventeen-dialog"> <p id="question-seventeen-paragraph">Spørgsmål 17</p> Hvem spiller hovedskurken i James Bond-filmen Goldeneye?<br>
-        <input type="radio" id="sean-bean" name="question-seventeen-dialog" value="sean-bean">
-        <label for="sean-bean">Sean Bean</label><br>
-        <input type="radio" id="gabriel-byrne" name="question-seventeen-dialog" value="gabriel-byrne">
-        <label for="gabriel-byrne">Gabriel Byrne</label><br>
-        <input type="radio" id="alan-rickman" name="question-seventeen-dialog" value="alan-rickman">
-        <label for="alan-rickman">Alan Rickman</label><br>
+      </dialog>
+      <!-- Spørgsmål 17 -->
+      <dialog id="question-seventeen-dialog">
+        <p id="question-seventeen-paragraph">Spørgsmål 17</p>
+        Hvem spiller hovedskurken i James Bond-filmen Goldeneye?<br />
+        <input type="radio" id="sean-bean" name="question-seventeen-dialog" value="sean-bean" />
+        <label for="sean-bean">Sean Bean</label><br />
+        <input type="radio" id="gabriel-byrne" name="question-seventeen-dialog" value="gabriel-byrne" />
+        <label for="gabriel-byrne">Gabriel Byrne</label><br />
+        <input type="radio" id="alan-rickman" name="question-seventeen-dialog" value="alan-rickman" />
+        <label for="alan-rickman">Alan Rickman</label><br />
         <button id="question-two-dialog-answer-button">Svar</button>
         <p id="question-two-dialog-result"></p>
-    </dialog>
-    <!-- Spørgsmål 18 -->
-      <dialog id="question-eighteen-dialog"> <p id="question-eighteen-paragraph">Spørgsmål 18</p> Hvilket år døde Josef Stalin?<br>
-        <input type="radio" id="1947" name="question-eigtheen-dialog" value="1947">
-        <label for="1947">1947</label><br>
-        <input type="radio" id="1953" name="question-eighteen-dialog" value="1953">
-        <label for="1953">1953</label><br>
-        <input type="radio" id="1959" name="question-eighteen-dialog" value="1959">
-        <label for="1959">1959</label><br>
+      </dialog>
+      <!-- Spørgsmål 18 -->
+      <dialog id="question-eighteen-dialog">
+        <p id="question-eighteen-paragraph">Spørgsmål 18</p>
+        Hvilket år døde Josef Stalin?<br />
+        <input type="radio" id="1947" name="question-eigtheen-dialog" value="1947" />
+        <label for="1947">1947</label><br />
+        <input type="radio" id="1953" name="question-eighteen-dialog" value="1953" />
+        <label for="1953">1953</label><br />
+        <input type="radio" id="1959" name="question-eighteen-dialog" value="1959" />
+        <label for="1959">1959</label><br />
         <button id="question-eighteen-dialog-answer-button">Svar</button>
         <p id="question-eighteen-dialog-result"></p>
-    </dialog>
-    <!-- Spørgsmål 19 -->
-      <dialog id="question-nineteen-dialog"> <p id="question-nineteen-paragraph">Spørgsmål 19</p> Hvem scorede målet til 2-0 for Danmark i EM-finalen for herrer i fodbold i 1992<br>
-        <input type="radio" id="john-faxe-jensen" name="question-nineteen-dialog" value="john-faxe-jensen">
-        <label for="john-faxe-jensen">John "Faxe" Jensen</label><br>
-        <input type="radio" id="kim-vilfort" name="question-nineteen-dialog" value="kim-vilfort">
-        <label for="kim-vilfort">Kim Vilfort</label><br>
-        <input type="radio" id="brian-laudrup" name="question-two-dialog" value="brian-laudrup">
-        <label for="brian-laudrup">Brian Laudrup</label><br>
+      </dialog>
+      <!-- Spørgsmål 19 -->
+      <dialog id="question-nineteen-dialog">
+        <p id="question-nineteen-paragraph">Spørgsmål 19</p>
+        Hvem scorede målet til 2-0 for Danmark i EM-finalen for herrer i fodbold i 1992<br />
+        <input type="radio" id="john-faxe-jensen" name="question-nineteen-dialog" value="john-faxe-jensen" />
+        <label for="john-faxe-jensen">John "Faxe" Jensen</label><br />
+        <input type="radio" id="kim-vilfort" name="question-nineteen-dialog" value="kim-vilfort" />
+        <label for="kim-vilfort">Kim Vilfort</label><br />
+        <input type="radio" id="brian-laudrup" name="question-two-dialog" value="brian-laudrup" />
+        <label for="brian-laudrup">Brian Laudrup</label><br />
         <button id="question-nineteen-dialog-answer-button">Svar</button>
         <p id="question-nineteen-dialog-result"></p>
-    </dialog>
-    <!-- Spørgsmål 20 -->
-      <dialog id="question-twenty-dialog"> <p id="question-twenty-paragraph">Spørgsmål 20</p> Hvem skrev romanerne Idioten og Forbrydelse og Straf?<br>
-        <input type="radio" id="robert-louis-stevenson" name="question-two-dialog" value="robert-louis-stevenson">
-        <label for="robert-louis-stevenson">Robert Louis Stevenson</label><br>
-        <input type="radio" id="thomas-moore" name="question-twenty-dialog" value="thomas-moore">
-        <label for="thomas-moore">Thomas Moore</label><br>
-        <input type="radio" id="fjordor-dostojevskij" name="question-twenty-dialog" value="fjordor-dostojevskij">
-        <label for="fjordor-dostojevskij">Fjordor Dostojevskij</label><br>
+      </dialog>
+      <!-- Spørgsmål 20 -->
+      <dialog id="question-twenty-dialog">
+        <p id="question-twenty-paragraph">Spørgsmål 20</p>
+        Hvem skrev romanerne Idioten og Forbrydelse og Straf?<br />
+        <input type="radio" id="robert-louis-stevenson" name="question-two-dialog" value="robert-louis-stevenson" />
+        <label for="robert-louis-stevenson">Robert Louis Stevenson</label><br />
+        <input type="radio" id="thomas-moore" name="question-twenty-dialog" value="thomas-moore" />
+        <label for="thomas-moore">Thomas Moore</label><br />
+        <input type="radio" id="fjordor-dostojevskij" name="question-twenty-dialog" value="fjordor-dostojevskij" />
+        <label for="fjordor-dostojevskij">Fjordor Dostojevskij</label><br />
         <button id="question-twenty-dialog-answer-button">Svar</button>
         <p id="question-twenty-dialog-result"></p>
-    </dialog>
+      </dialog>
     </section>
 
     <script src="app.js"></script>
