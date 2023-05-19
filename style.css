@@ -1,3 +1,12 @@
 body {
     background-color: red;
 }
+
+.questions-dialog {
+    display: grid;
+    grid-column: auto auto;
+}
+
+.hidden {
+    display: none;
+}
