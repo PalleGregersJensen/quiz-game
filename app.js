@@ -39,7 +39,7 @@ function answerQuestionOne() {
   }
   console.log("Læses dette?");
 
-  const setTimeoutAtQuestions = setTimeout(closeDialogQuestionOne, 2000);
+  setTimeout(closeDialogQuestionOne, 2000);
 }
 // Spørgsmål 1 dialogvindue lukkes
 function closeDialogQuestionOne() {
@@ -77,7 +77,7 @@ function answerQuestionTwo() {
     document.querySelector("#question-two-dialog-result").textContent = "Desværre forkert";
   }
   console.log("Læses dette i spørgsmål to?");
-  const timeOutToNextQuestion = setTimeout(closeDialogQuestionTwo, 2000);
+  setTimeout(closeDialogQuestionTwo, 2000);
 }
 
 // Spørgsmål 2 dialog lukkes
@@ -115,13 +115,15 @@ function answerQuestionThree() {
     document.querySelector("#points").textContent = points;
   }
   console.log("Læses dette i spørgsmål tre?");
-  const timeOutToNextQuestion = setTimeout(closeDialogQuestionThree, 2000);
+  setTimeout(closeDialogQuestionThree, 2000);
+  console.log("Hvad sker der her?")
 }
 
 // Spørgsmål 3 dialog lukkes
 function closeDialogQuestionThree() {
   document.querySelector("#question-three-dialog").close();
   questionFour();
+  console.log("Spørgsmål 4");
 }
 
 // Spørgsmål 4
@@ -139,24 +141,24 @@ function answerButtonClickedInQuestionFour() {
 }
 
 function answerQuestionFour() {
-  const everyThirdYear = document.querySelector("#EP3");
-  const everyFourthYear = document.querySelector("#EP4");
-  const everyFifthYear = document.querySelector("#EP5");
+  const mikeLeigh = document.querySelector("#mike-leigh");
+  const johnFrankenheimer = document.querySelector("#john-frankenheimer");
+  const melBrooks = document.querySelector("#mel-brooks");
 
-  if (everyThirdYear.checked) {
+  if (mikeLeigh.checked) {
+    document.querySelector("#question-four-dialog-result").textContent = "Desværre forkert";
+  } else if (johnFrankenheimer.checked) {
     document.querySelector("#question-three-dialog-result").textContent = "Desværre forkert";
-  } else if (everyFourthYear.checked) {
-    document.querySelector("#question-three-dialog-result").textContent = "Desværre forkert";
-  } else if (everyFifthYear.checked) {
+  } else if (melBrooks.checked) {
     document.querySelector("#question-three-dialog-result").textContent = "Korrekt";
     points +=1;
     document.querySelector("#points").textContent = points;
   }
   console.log("Læses dette i spørgsmål tre?");
-  const timeOutToNextQuestion = setTimeout(closeDialogQuestionThree, 2000);
+  setTimeout(closeDialogQuestionFour, 2000);
 }
 
 // Spørgsmål 4 dialog lukkes
-function closeDialogQuestionThree() {
-  document.querySelector("#question-three-dialog").close();
+function closeDialogQuestionFour() {
+  document.querySelector("#question-four-dialog").close();
 }
