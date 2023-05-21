@@ -150,9 +150,9 @@ function answerQuestionFour() {
   if (mikeLeigh.checked) {
     document.querySelector("#question-four-dialog-result").textContent = "Desværre forkert";
   } else if (johnFrankenheimer.checked) {
-    document.querySelector("#question-three-dialog-result").textContent = "Desværre forkert";
+    document.querySelector("#question-four-dialog-result").textContent = "Desværre forkert";
   } else if (melBrooks.checked) {
-    document.querySelector("#question-three-dialog-result").textContent = "Korrekt";
+    document.querySelector("#question-four-dialog-result").textContent = "Korrekt";
     points += 1;
     document.querySelector("#points").textContent = points;
   }
@@ -164,4 +164,43 @@ function answerQuestionFour() {
 // Spørgsmål 4 dialog lukkes
 function closeDialogQuestionFour() {
   document.querySelector("#question-four-dialog").close();
+  questionFive();
+}
+
+// Spørgsmål 5
+function questionFive() {
+  console.log("question five");
+  document.querySelector("#question-five-dialog").showModal();
+  document
+    .querySelector("#question-five-dialog-answer-button")
+    .addEventListener("click", answerButtonClickedInQuestionFive);
+  console.log("Spørgsmål 5");
+}
+
+function answerButtonClickedInQuestionFive() {
+  answerQuestionFive();
+}
+
+function answerQuestionFive() {
+  const answerOne = document.querySelector("#answer-one");
+  const answerTwo = document.querySelector("#answer-two");
+  const answerThree = document.querySelector("#answer-three");
+
+  if (answerOne.checked) {
+    document.querySelector("#question-five-dialog-result").textContent = "Desværre forkert";
+  } else if (answerTwo.checked) {
+    document.querySelector("#question-five-dialog-result").textContent = "Korrekt";
+    points += 1;
+    document.querySelector("#points").textContent = points;
+  } else if (answerThree.checked) {
+    document.querySelector("#question-five-dialog-result").textContent = "Desværre forkert";
+  }
+  console.log("Læses dette i spørgsmål tre?");
+  document.querySelector("#question-five-dialog-answer-button").classList.add("hidden");
+  setTimeout(closeDialogQuestionFive, 2000);
+}
+
+// Spørgsmål 5 dialog lukkes
+function closeDialogQuestionFive() {
+  document.querySelector("#question-five-dialog").close();
 }
