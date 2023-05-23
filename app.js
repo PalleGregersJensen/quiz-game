@@ -203,4 +203,43 @@ function answerQuestionFive() {
 // Spørgsmål 5 dialog lukkes
 function closeDialogQuestionFive() {
   document.querySelector("#question-five-dialog").close();
+  questionSix();
+}
+
+// Spørgsmål 6
+function questionSix() {
+  console.log("question six");
+  document.querySelector("#question-six-dialog").showModal();
+  document
+    .querySelector("#question-six-dialog-answer-button")
+    .addEventListener("click", answerButtonClickedInQuestionSix);
+  console.log("Spørgsmål 6");
+}
+
+function answerButtonClickedInQuestionSix() {
+  answerQuestionSix();
+}
+
+function answerQuestionSix() {
+  const poland = document.querySelector("#poland");
+  const germany = document.querySelector("#germany");
+  const hungary = document.querySelector("#hungary");
+
+  if (poland.checked) {
+    document.querySelector("#question-six-dialog-result").textContent = "Korrekt";
+    points += 1;
+    document.querySelector("#points").textContent = points;
+  } else if (germany.checked) {
+    document.querySelector("#question-six-dialog-result").textContent = "Desværre forkert";
+  } else if (hungary.checked) {
+    document.querySelector("#question-six-dialog-result").textContent = "Desværre forkert";
+  }
+  console.log("Læses dette i spørgsmål seks?");
+  document.querySelector("#question-six-dialog-answer-button").classList.add("hidden");
+  setTimeout(closeDialogQuestionSix, 2000);
+}
+
+// Spørgsmål 6 dialog lukkes
+function closeDialogQuestionSix() {
+  document.querySelector("#question-six-dialog").close();
 }
