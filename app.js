@@ -281,4 +281,126 @@ function answerQuestionSeven() {
 // Spørgsmål 7 dialog lukkes
 function closeDialogQuestionSeven() {
   document.querySelector("#question-seven-dialog").close();
+  questionEight();
+}
+
+// Spørgsmål 8
+function questionEight() {
+  console.log("question eight");
+  document.querySelector("#question-eight-dialog").showModal();
+  document
+    .querySelector("#question-eight-dialog-answer-button")
+    .addEventListener("click", answerButtonClickedInQuestionEight);
+  console.log("Spørgsmål 8");
+}
+
+function answerButtonClickedInQuestionEight() {
+  answerQuestionEight();
+}
+
+function answerQuestionEight() {
+  const year1947 = document.querySelector("#year1947");
+  const year1953 = document.querySelector("#year1953");
+  const year1959 = document.querySelector("#year1959");
+
+  if (year1947.checked) {
+    document.querySelector("#question-eight-dialog-result").textContent = "Desværre forkert";    
+  } else if (year1953.checked) {
+    document.querySelector("#question-eight-dialog-result").textContent = "Korrekt";
+    points += 1;
+    document.querySelector("#points").textContent = points;
+  } else if (year1959.checked) {
+    document.querySelector("#question-eight-dialog-result").textContent = "Desværre forkert";
+  }
+  console.log("Læses dette i spørgsmål otte?");
+  document.querySelector("#question-eight-dialog-answer-button").classList.add("hidden");
+  setTimeout(closeDialogQuestionEight, 2000);
+}
+
+// Spørgsmål 8 dialog lukkes
+function closeDialogQuestionEight() {
+  document.querySelector("#question-eight-dialog").close();
+  questionNine();
+}
+
+// Spørgsmål 9
+function questionNine() {
+  console.log("question nine");
+  document.querySelector("#question-nine-dialog").showModal();
+  document
+    .querySelector("#question-nine-dialog-answer-button")
+    .addEventListener("click", answerButtonClickedInQuestionNine);
+  console.log("Spørgsmål 9");
+}
+
+function answerButtonClickedInQuestionNine() {
+  answerQuestionNine();
+}
+
+function answerQuestionNine() {
+  const johnFaxeJensen = document.querySelector("#john-faxe-jensen");
+  const kimVilfort = document.querySelector("#kim-vilfort");
+  const brianLaudrup = document.querySelector("#brian-laudrup");
+
+  if (johnFaxeJensen.checked) {
+    document.querySelector("#question-nine-dialog-result").textContent = "Desværre forkert";    
+  } else if (kimVilfort.checked) {
+    document.querySelector("#question-nine-dialog-result").textContent = "Korrekt";
+    points += 1;
+    document.querySelector("#points").textContent = points;
+  } else if (brianLaudrup.checked) {
+    document.querySelector("#question-nine-dialog-result").textContent = "Desværre forkert";
+  }
+  console.log("Læses dette i spørgsmål ni?");
+  document.querySelector("#question-nine-dialog-answer-button").classList.add("hidden");
+  setTimeout(closeDialogQuestionNine, 2000);
+}
+
+// Spørgsmål 9 dialog lukkes
+function closeDialogQuestionNine() {
+  document.querySelector("#question-nine-dialog").close();
+  questionTen();
+}
+
+// Spørgsmål 10
+function questionTen() {
+  console.log("question ten");
+  document.querySelector("#question-ten-dialog").showModal();
+  document
+    .querySelector("#question-ten-dialog-answer-button")
+    .addEventListener("click", answerButtonClickedInQuestionTen);
+  console.log("Spørgsmål 10");
+}
+
+function answerButtonClickedInQuestionTen() {
+  answerQuestionTen();
+}
+
+function answerQuestionTen() {
+  const robertLouisStevenson = document.querySelector("#robert-louis-stevenson");
+  const thomasMoore = document.querySelector("#thomas-moore");
+  const fjodorDostojevskij = document.querySelector("#fjordor-dostojevskij");
+
+  if (robertLouisStevenson.checked) {
+    document.querySelector("#question-ten-dialog-result").textContent = "Desværre forkert";    
+  } else if (thomasMoore.checked) {
+    document.querySelector("#question-ten-dialog-result").textContent = "Desværre forkert";
+  } else if (fjodorDostojevskij.checked) {
+    document.querySelector("#question-ten-dialog-result").textContent = "Korrekt";
+    points += 1;
+    document.querySelector("#points").textContent = points;
+  }
+  console.log("Læses dette i spørgsmål ti?");
+  document.querySelector("#question-ten-dialog-answer-button").classList.add("hidden");
+  setTimeout(closeDialogQuestionTen, 2000);
+}
+
+// Spørgsmål 10 dialog lukkes
+function closeDialogQuestionTen() {
+  document.querySelector("#question-ten-dialog").close();
+  showFinalScore();
+}
+
+function showFinalScore() {
+  document.querySelector("#grid-container").textContent = `Tillykke du fik ${points} rigtige. Godt gået!` 
 }
