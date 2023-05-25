@@ -2,6 +2,11 @@ body {
     background-color: red;
 }
 
+.dialog-window {
+    width: 60vw;
+    height: 60vh;
+}
+
 .questions-dialog {
     display: grid;
     grid-column: auto auto;
@@ -9,4 +14,31 @@ body {
 
 .hidden {
     display: none;
+}
+
+.timer-div-container {
+width: 20vw;
+height: 10vh;    
+border-style: double;
+}
+
+.timer {
+width: 20vw;
+height: 10vh;
+background-color: red;
+
+animation-name: timer;
+animation-duration: 10s;
+animation-iteration-count: 1;
+animation-timing-function: linear;
+}
+
+@keyframes timer {
+    0% {
+        width: 20vw;
+    }
+    100%{
+        width: 0vw;
+}
+
 }

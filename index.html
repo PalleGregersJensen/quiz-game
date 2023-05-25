@@ -13,136 +13,167 @@
     <section>
       <p>Velkommen. Tryk på knappen Start Quiz for at starte quizzen.</p>
       <button id="start-button-quiz">Start Quiz</button>
+      <button id="try-again-button" class="hidden">Prøv igen</button>
       <p>Antal rigtige svar:<p id="points"></p></p>
     </section>
 
     <section id="grid-container">
       <!-- Spørgsmål 1 -->
-      <dialog id="question-one-dialog">
+      <dialog id="question-one-dialog" class="dialog-window">
+        <div class="timer-div-container">
+        <div id="timer-div-question-one"></div>
+        </div>
         <p id="question-one-paragraph">Spørgsmål 1</p>
         Hvad hedder hovedstaden i Mongoliet? <br />
-        <input type="radio" id="ulan-bator" name="question-one-dialog" value="Ulan Bator" />
+        <input type="radio" id="ulan-bator" name="question-one-dialog" value="Ulan Bator" class="checkbox"/>
         <label for="ulan-bator">Ulan Bator</label><br />
-        <input type="radio" id="phom-penh" name="question-one-dialog" value="phom-penh" />
+        <input type="radio" id="phom-penh" name="question-one-dialog" value="phom-penh" class="checkbox"/>
         <label for="phom-penh">Phom Penh</label><br />
-        <input type="radio" id="kathmandu" name="question-one-dialog" value="kathmandu" />
+        <input type="radio" id="kathmandu" name="question-one-dialog" value="kathmandu" class="checkbox"/>
         <label for="kathmandu">Kathmandu</label><br />
         <button id="question-one-dialog-answer-button">Svar</button>
         <p id="question-one-dialog-result"></p>
       </dialog>
       <!-- Spørgsmål 2 -->
-      <dialog id="question-two-dialog">
+      <dialog id="question-two-dialog" class="dialog-window">
+        <div class="timer-div-container">
+        <div id="timer-div-question-two"></div>
+        </div>
         <p id="question-two-paragraph">Spørgsmål 2</p>
         Hvem spiller hovedskurken i James Bond-filmen Goldeneye?<br />
-        <input type="radio" id="sean-bean" name="question-two-dialog" value="sean-bean" />
+        <input type="radio" id="sean-bean" name="question-two-dialog" value="sean-bean" class="checkbox"/>
         <label for="sean-bean">Sean Bean</label><br />
-        <input type="radio" id="gabriel-byrne" name="question-two-dialog" value="gabriel-byrne" />
+        <input type="radio" id="gabriel-byrne" name="question-two-dialog" value="gabriel-byrne" class="checkbox"/>
         <label for="gabriel-byrne">Gabriel Byrne</label><br />
-        <input type="radio" id="alan-rickman" name="question-two-dialog" value="alan-rickman" />
+        <input type="radio" id="alan-rickman" name="question-two-dialog" value="alan-rickman" class="checkbox"/>
         <label for="alan-rickman">Alan Rickman</label><br />
         <button id="question-two-dialog-answer-button">Svar</button>
         <p id="question-two-dialog-result"></p>
       </dialog>
       <!-- Spørgsmål 3 -->
-      <dialog id="question-three-dialog">
+      <dialog id="question-three-dialog" class="dialog-window">
+        <div class="timer-div-container">
+        <div id="timer-div-question-three"></div>
+        </div>
         <p id="question-three-paragraph">Spørgsmål 3</p>
         Hvor tit afholdes valg til Europa-parlamentet?<br />
-        <input type="radio" id="EP3" name="question-3-dialog" value="EP3" />
+        <input type="radio" id="EP3" name="question-3-dialog" value="EP3" class="checkbox"/>
         <label for="EP3">Hvert tredje år</label><br />
-        <input type="radio" id="EP4" name="question-three-dialog" value="EP4" />
+        <input type="radio" id="EP4" name="question-three-dialog" value="EP4" class="checkbox"/>
         <label for="EP4">Hvert fjerde år</label><br />
-        <input type="radio" id="EP5" name="question-three-dialog" value="EP5" />
+        <input type="radio" id="EP5" name="question-three-dialog" value="EP5" class="checkbox"/>
         <label for="EP5">Hvert femte år</label><br />
         <button id="question-three-dialog-answer-button">Svar</button>
         <p id="question-three-dialog-result"></p>
       </dialog>
       <!-- Spørgsmål 4 -->
-      <dialog id="question-four-dialog">
+      <dialog id="question-four-dialog" class="dialog-window">
+        <div class="timer-div-container">
+        <div id="timer-div-question-four"></div>
+        </div>
         <p id="question-four-paragraph">Spørgsmål 4</p>
         Hvem instruerede filmene The Producers og Blazing Saddles?<br />
-        <input type="radio" id="mike-leigh" name="question-four-dialog" value="mike-leigh" />
+        <input type="radio" id="mike-leigh" name="question-four-dialog" value="mike-leigh" class="checkbox"/>
         <label for="mike-leigh">Mike Leigh</label><br />
-        <input type="radio" id="john-frankenheimer" name="question-four-dialog" value="john-frankenheimer" />
+        <input type="radio" id="john-frankenheimer" name="question-four-dialog" value="john-frankenheimer" class="checkbox"/>
         <label for="john-frankenheimer">John Frankenheimer</label><br />
-        <input type="radio" id="mel-brooks" name="question-four-dialog" value="mel-brooks" />
+        <input type="radio" id="mel-brooks" name="question-four-dialog" value="mel-brooks" class="checkbox"/>
         <label for="mel-brooks">Mel Brooks</label><br />
         <button id="question-four-dialog-answer-button">Svar</button>
         <p id="question-four-dialog-result"></p>
       </dialog>
       <!-- Spørgsmål 5 -->
-      <dialog id="question-five-dialog">
+      <dialog id="question-five-dialog" class="dialog-window">
+        <div class="timer-div-container">
+        <div id="timer-div-question-five"></div>
+        </div>
         <p id="question-two-paragraph">Spørgsmål 5</p>
         Hvornår foregik Den Amerikanske Borgerkrig?<br />
-        <input type="radio" id="answer-one" name="question-five-dialog" value="answer-one" />
+        <input type="radio" id="answer-one" name="question-five-dialog" value="answer-one" class="checkbox"/>
         <label for="answer-one">1855-1861</label><br />
-        <input type="radio" id="answer-two" name="question-five-dialog" value="answer-two" />
+        <input type="radio" id="answer-two" name="question-five-dialog" value="answer-two" class="checkbox"/>
         <label for="answer-two">1861-1865</label><br />
-        <input type="radio" id="answer-three" name="question-five-dialog" value="answer-three" />
+        <input type="radio" id="answer-three" name="question-five-dialog" value="answer-three" class="checkbox"/>
         <label for="answer-three">1866-1870</label><br />
         <button id="question-five-dialog-answer-button">Svar</button>
         <p id="question-five-dialog-result"></p>
       </dialog>
       <!-- Spørgsmål 6 -->
-      <dialog id="question-six-dialog">
+      <dialog id="question-six-dialog" class="dialog-window">
+        <div class="timer-div-container">
+        <div id="timer-div-question-six"></div>
+        </div>
         <p id="question-six-paragraph">Spørgsmål 6</p>
         Hvilket land kom Pave Johannes Paul II fra?<br />
-        <input type="radio" id="poland" name="question-six-dialog" value="poland" />
+        <input type="radio" id="poland" name="question-six-dialog" value="poland" class="checkbox"/>
         <label for="poland">Polen</label><br />
-        <input type="radio" id="germany" name="question-six-dialog" value="germany" />
+        <input type="radio" id="germany" name="question-six-dialog" value="germany" class="checkbox"/>
         <label for="germany">Tyskland</label><br />
-        <input type="radio" id="hungary" name="question-six-dialog" value="hungary" />
+        <input type="radio" id="hungary" name="question-six-dialog" value="hungary" class="checkbox"/>
         <label for="hungary">Ungarn</label><br />
         <button id="question-six-dialog-answer-button">Svar</button>
         <p id="question-six-dialog-result"></p>
       </dialog>
       <!-- Spørgsmål 7 -->
-      <dialog id="question-seven-dialog">
+      <dialog id="question-seven-dialog" class="dialog-window">
+        <div class="timer-div-container">
+        <div id="timer-div-question-seven"></div>
+        </div>
         <p id="question-seven-paragraph">Spørgsmål 7</p>
         Hvilket år blev Sydsudan en selvstændig stat?<br />
-        <input type="radio" id="year2007" name="year2007" value="year2007" />
+        <input type="radio" id="year2007" name="year2007" value="year2007" class="checkbox"/>
         <label for="year2007">2007</label><br />
-        <input type="radio" id="year2011" name="year2011" value="year2011" />
+        <input type="radio" id="year2011" name="year2011" value="year2011" class="checkbox"/>
         <label for="year2011">2011</label><br />
-        <input type="radio" id="year2015" name="year2015" value="year2015" />
+        <input type="radio" id="year2015" name="year2015" value="year2015" class="checkbox"/>
         <label for="year2015">2015</label><br />
         <button id="question-seven-dialog-answer-button">Svar</button>
         <p id="question-seven-dialog-result"></p>
       </dialog>
       <!-- Spørgsmål 8 -->
-      <dialog id="question-eight-dialog">
+      <dialog id="question-eight-dialog" class="dialog-window">
+        <div class="timer-div-container">
+        <div id="timer-div-question-eight"></div>
+        </div>
         <p id="question-eight-paragraph">Spørgsmål 8</p>
         Hvilket år døde Josef Stalin?<br />
-        <input type="radio" id="year1947" name="question-eigth-dialog" value="year1947" />
+        <input type="radio" id="year1947" name="question-eigth-dialog" value="year1947" class="checkbox"/>
         <label for="year1947">1947</label><br />
-        <input type="radio" id="year1953" name="question-eight-dialog" value="year1953" />
+        <input type="radio" id="year1953" name="question-eight-dialog" value="year1953" class="checkbox"/>
         <label for="year1953">1953</label><br />
-        <input type="radio" id="year1959" name="question-eight-dialog" value="year1959" />
+        <input type="radio" id="year1959" name="question-eight-dialog" value="year1959" class="checkbox"/>
         <label for="year1959">1959</label><br />
         <button id="question-eight-dialog-answer-button">Svar</button>
         <p id="question-eight-dialog-result"></p>
       </dialog>
       <!-- Spørgsmål 9 -->
-      <dialog id="question-nine-dialog">
+      <dialog id="question-nine-dialog" class="dialog-window">
+        <div class="timer-div-container">
+        <div id="timer-div-question-nine"></div>
+        </div>
         <p id="question-nine-paragraph">Spørgsmål 9</p>
         Hvem scorede målet til 2-0 for Danmark i EM-finalen for herrer i fodbold i 1992<br />
-        <input type="radio" id="john-faxe-jensen" name="question-nine-dialog" value="john-faxe-jensen" />
+        <input type="radio" id="john-faxe-jensen" name="question-nine-dialog" value="john-faxe-jensen" class="checkbox"/>
         <label for="john-faxe-jensen">John "Faxe" Jensen</label><br />
-        <input type="radio" id="kim-vilfort" name="question-nine-dialog" value="kim-vilfort" />
+        <input type="radio" id="kim-vilfort" name="question-nine-dialog" value="kim-vilfort" class="checkbox"/>
         <label for="kim-vilfort">Kim Vilfort</label><br />
-        <input type="radio" id="brian-laudrup" name="question-nine-dialog" value="brian-laudrup" />
+        <input type="radio" id="brian-laudrup" name="question-nine-dialog" value="brian-laudrup" class="checkbox"/>
         <label for="brian-laudrup">Brian Laudrup</label><br />
         <button id="question-nine-dialog-answer-button">Svar</button>
         <p id="question-nine-dialog-result"></p>
       </dialog>
       <!-- Spørgsmål 10 -->
-      <dialog id="question-ten-dialog">
+      <dialog id="question-ten-dialog" class="dialog-window">
+        <div class="timer-div-container">
+        <div id="timer-div-question-ten"></div>
+        </div>
         <p id="question-ten-paragraph">Spørgsmål 10</p>
         Hvem skrev romanerne Idioten og Forbrydelse og Straf?<br />
-        <input type="radio" id="robert-louis-stevenson" name="question-ten-dialog" value="robert-louis-stevenson" />
+        <input type="radio" id="robert-louis-stevenson" name="question-ten-dialog" value="robert-louis-stevenson" class="checkbox"/>
         <label for="robert-louis-stevenson">Robert Louis Stevenson</label><br />
-        <input type="radio" id="thomas-moore" name="question-ten-dialog" value="thomas-moore" />
+        <input type="radio" id="thomas-moore" name="question-ten-dialog" value="thomas-moore" class="checkbox"/>
         <label for="thomas-moore">Thomas Moore</label><br />
-        <input type="radio" id="fjordor-dostojevskij" name="question-ten-dialog" value="fjordor-dostojevskij" />
+        <input type="radio" id="fjordor-dostojevskij" name="question-ten-dialog" value="fjordor-dostojevskij" class="checkbox"/>
         <label for="fjordor-dostojevskij">Fjordor Dostojevskij</label><br />
         <button id="question-ten-dialog-answer-button">Svar</button>
         <p id="question-ten-dialog-result"></p>
