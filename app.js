@@ -19,7 +19,6 @@ function questionOne() {
     .addEventListener("click", answerButtonClickedInQuestionOne);
   document.querySelector("#timer-div-question-one").classList.add("timer");
   document.querySelector("#timer-div-question-one").addEventListener("animationend", questionTwo);
-  // document.querySelector(".timer-div-container").classList.remove("hidden");
 }
 
 function answerButtonClickedInQuestionOne() {
@@ -56,6 +55,7 @@ function closeDialogQuestionOne() {
 // Spørgsmål 2
 function questionTwo() {
   console.log("question two");
+  console.log(points);
   document.querySelector("#question-two-dialog").showModal();
   document.querySelector("#timer-div-question-two").classList.add("timer");
   document.querySelector("#timer-div-container-question-two").classList.remove("hidden");
@@ -300,7 +300,7 @@ function answerQuestionSeven() {
   const year2015 = document.querySelector("#year2015");
 
   if (year2007.checked) {
-    document.querySelector("#question-seven-dialog-result").textContent = "Desværre forkert";    
+    document.querySelector("#question-seven-dialog-result").textContent = "Desværre forkert";
   } else if (year2011.checked) {
     document.querySelector("#question-seven-dialog-result").textContent = "Korrekt";
     points += 1;
@@ -344,7 +344,7 @@ function answerQuestionEight() {
   const year1959 = document.querySelector("#year1959");
 
   if (year1947.checked) {
-    document.querySelector("#question-eight-dialog-result").textContent = "Desværre forkert";    
+    document.querySelector("#question-eight-dialog-result").textContent = "Desværre forkert";
   } else if (year1953.checked) {
     document.querySelector("#question-eight-dialog-result").textContent = "Korrekt";
     points += 1;
@@ -388,7 +388,7 @@ function answerQuestionNine() {
   const brianLaudrup = document.querySelector("#brian-laudrup");
 
   if (johnFaxeJensen.checked) {
-    document.querySelector("#question-nine-dialog-result").textContent = "Desværre forkert";    
+    document.querySelector("#question-nine-dialog-result").textContent = "Desværre forkert";
   } else if (kimVilfort.checked) {
     document.querySelector("#question-nine-dialog-result").textContent = "Korrekt";
     points += 1;
@@ -432,7 +432,7 @@ function answerQuestionTen() {
   const fjodorDostojevskij = document.querySelector("#fjordor-dostojevskij");
 
   if (robertLouisStevenson.checked) {
-    document.querySelector("#question-ten-dialog-result").textContent = "Desværre forkert";    
+    document.querySelector("#question-ten-dialog-result").textContent = "Desværre forkert";
   } else if (thomasMoore.checked) {
     document.querySelector("#question-ten-dialog-result").textContent = "Desværre forkert";
   } else if (fjodorDostojevskij.checked) {
@@ -448,11 +448,20 @@ function answerQuestionTen() {
 // Spørgsmål 10 dialog lukkes
 function closeDialogQuestionTen() {
   document.querySelector("#question-ten-dialog").close();
+  Number.points;
   showFinalScore();
 }
 
 function showFinalScore() {
-  document.querySelector("#grid-container").textContent = `Tillykke du fik ${points} rigtige. Godt gået!` 
+  if (points === 8 || points === 9 || points === 10) {
+    document.querySelector("#grid-container").textContent = `Tillykke du fik ${points} rigtige. Godt gået!`;
+  } else if (points == 5 || points === 6 || points === 7) {
+    document.querySelector("#grid-container").textContent = `Tillykke du fik ${points} rigtige. Fornuftigt resultat`;
+  } else if (points === 2 || points === 3 || points === 4) {
+    document.querySelector("#grid-container").textContent = `Tillykke du fik ${points} rigtige. Godt kæmpet`;
+  } else if (points === 0 || points === 1) {
+    document.querySelector("#grid-container").textContent = `Du fik ${points} rigtige. Prøv eventuelt igen`;
+  }
   showTryAgainButton();
 }
 
@@ -463,5 +472,6 @@ function showTryAgainButton() {
 }
 
 function goToStart() {
+  console.log("Genstart quiz");
   location.reload();
 }
