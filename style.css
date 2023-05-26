@@ -36,9 +36,11 @@ animation-timing-function: linear;
 @keyframes timer {
     0% {
         width: 20vw;
+        background-color: green;
     }
     100%{
         width: 0vw;
+        background-color: red;
 }
 
 }
