@@ -19,12 +19,12 @@ function questionOne() {
     .addEventListener("click", answerButtonClickedInQuestionOne);
   document.querySelector("#timer-div-question-one").classList.add("timer");
   document.querySelector("#timer-div-question-one").addEventListener("animationend", questionTwo);
-  
+  // document.querySelector(".timer-div-container").classList.remove("hidden");
 }
 
 function answerButtonClickedInQuestionOne() {
   document.querySelector("#timer-div-question-one").classList.remove("timer");
-  document.querySelector(".timer-div-container").classList.add("hidden");
+  document.querySelector("#timer-div-container-question-one").classList.add("hidden");
   answerQuestionOne();
 }
 
@@ -57,17 +57,18 @@ function closeDialogQuestionOne() {
 function questionTwo() {
   console.log("question two");
   document.querySelector("#question-two-dialog").showModal();
+  document.querySelector("#timer-div-question-two").classList.add("timer");
+  document.querySelector("#timer-div-container-question-two").classList.remove("hidden");
   document
     .querySelector("#question-two-dialog-answer-button")
     .addEventListener("click", answerButtonClickedInQuestionTwo);
   console.log("Spørgsmål 2");
-  document.querySelector("#timer-div-question-two").classList.add("timer");
   document.querySelector("#timer-div-question-two").addEventListener("animationend", questionThree);
 }
 
 function answerButtonClickedInQuestionTwo() {
-  document.querySelector("#timer-div-question-two").classList.remove("timer");
-  document.querySelector(".timer-div-container").classList.add("hidden");
+  document.querySelector("#timer-div-question-one").classList.remove("timer");
+  document.querySelector("#timer-div-container-question-two").classList.add("hidden");
   answerQuestionTwo();
 }
 
@@ -106,11 +107,12 @@ function questionThree() {
   console.log("Spørgsmål 3");
   document.querySelector("#timer-div-question-three").classList.add("timer");
   document.querySelector("#timer-div-question-three").addEventListener("animationend", questionFour);
+  document.querySelector("#timer-div-container-question-three").classList.remove("hidden");
 }
 
 function answerButtonClickedInQuestionThree() {
   document.querySelector("#timer-div-question-three").classList.remove("timer");
-  document.querySelector(".timer-div-container").classList.add("hidden");
+  document.querySelector("#timer-div-container-question-three").classList.add("hidden");
   answerQuestionThree();
 }
 
@@ -151,11 +153,12 @@ function questionFour() {
   console.log("Spørgsmål 4");
   document.querySelector("#timer-div-question-four").classList.add("timer");
   document.querySelector("#timer-div-question-four").addEventListener("animationend", questionFive);
+  document.querySelector("#timer-div-container-question-four").classList.remove("hidden");
 }
 
 function answerButtonClickedInQuestionFour() {
   document.querySelector("#timer-div-question-four").classList.remove("timer");
-  document.querySelector(".timer-div-container").classList.add("hidden");
+  document.querySelector("#timer-div-container-question-four").classList.add("hidden");
   answerQuestionFour();
 }
 
@@ -194,11 +197,12 @@ function questionFive() {
   console.log("Spørgsmål 5");
   document.querySelector("#timer-div-question-five").classList.add("timer");
   document.querySelector("#timer-div-question-five").addEventListener("animationend", questionSix);
+  document.querySelector("#timer-div-container-question-five").classList.remove("hidden");
 }
 
 function answerButtonClickedInQuestionFive() {
   document.querySelector("#timer-div-question-five").classList.remove("timer");
-  document.querySelector(".timer-div-container").classList.add("hidden");
+  document.querySelector("#timer-div-container-question-five").classList.add("hidden");
   answerQuestionFive();
 }
 
@@ -236,12 +240,13 @@ function questionSix() {
     .addEventListener("click", answerButtonClickedInQuestionSix);
   console.log("Spørgsmål 6");
   document.querySelector("#timer-div-question-six").classList.add("timer");
-  document.querySelector(".timer-div-container").addEventListener("animationend", questionSeven);
+  document.querySelector("#timer-div-question-six").addEventListener("animationend", questionSeven);
+  document.querySelector("#timer-div-container-question-six").classList.remove("hidden");
 }
 
 function answerButtonClickedInQuestionSix() {
   document.querySelector("#timer-div-question-six").classList.remove("timer");
-  document.querySelector(".timer-div-container").classList.add("hidden");
+  document.querySelector("#timer-div-container-question-six").classList.add("hidden");
   answerQuestionSix();
 }
 
@@ -280,11 +285,12 @@ function questionSeven() {
   console.log("Spørgsmål 7");
   document.querySelector("#timer-div-question-seven").classList.add("timer");
   document.querySelector("#timer-div-question-seven").addEventListener("animationend", questionEight);
+  document.querySelector("#timer-div-container-question-seven").classList.remove("hidden");
 }
 
 function answerButtonClickedInQuestionSeven() {
   document.querySelector("#timer-div-question-seven").classList.remove("timer");
-  document.querySelector(".timer-div-container").classList.add("hidden");
+  document.querySelector("#timer-div-container-question-seven").classList.add("hidden");
   answerQuestionSeven();
 }
 
@@ -323,11 +329,12 @@ function questionEight() {
   console.log("Spørgsmål 8");
   document.querySelector("#timer-div-question-eight").classList.add("timer");
   document.querySelector("#timer-div-question-eight").addEventListener("animationend", questionNine);
+  document.querySelector("#timer-div-container-question-eight").classList.remove("hidden");
 }
 
 function answerButtonClickedInQuestionEight() {
   document.querySelector("#timer-div-question-eight").classList.remove("timer");
-  document.querySelector(".timer-div-container").classList.add("hidden");
+  document.querySelector("#timer-div-container-question-eight").classList.add("hidden");
   answerQuestionEight();
 }
 
@@ -366,11 +373,12 @@ function questionNine() {
   console.log("Spørgsmål 9");
   document.querySelector("#timer-div-question-nine").classList.add("timer");
   document.querySelector("#timer-div-question-nine").addEventListener("animationend", questionTen);
+  document.querySelector("#timer-div-container-question-nine").classList.remove("hidden");
 }
 
 function answerButtonClickedInQuestionNine() {
   document.querySelector("#timer-div-question-nine").classList.remove("timer");
-  document.querySelector(".timer-div-container").classList.add("hidden");
+  document.querySelector("#timer-div-container-question-nine").classList.add("hidden");
   answerQuestionNine();
 }
 
@@ -409,11 +417,12 @@ function questionTen() {
   console.log("Spørgsmål 10");
   document.querySelector("#timer-div-question-ten").classList.add("timer");
   document.querySelector("#timer-div-question-ten").addEventListener("animationend", showFinalScore);
+  document.querySelector("#timer-div-container-question-ten").classList.remove("hidden");
 }
 
 function answerButtonClickedInQuestionTen() {
   document.querySelector("#timer-div-question-ten").classList.remove("timer");
-  document.querySelector(".timer-div-container").classList.add("hidden");
+  document.querySelector("#timer-div-container-question-ten").classList.add("hidden");
   answerQuestionTen();
 }
 
